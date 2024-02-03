@@ -45,17 +45,17 @@ def form_execution_time(function, *args):
 
 small_amount = 113
 
-greedy_result_example = find_coins_greedy(small_amount)
-dp_result_example = find_min_coins(small_amount)
+greedy_result_small = find_coins_greedy(small_amount)
+dp_result_small = find_min_coins(small_amount)
 
-print(form_result(greedy_result_example, "Результат Жадібного Алгоритму для малої суми"))
-print(form_result(dp_result_example, "Результат Динамічного Програмування для малої суми"))
+print(form_result(greedy_result_small, "Результат Жадібного Алгоритму для малої суми"))
+print(form_result(dp_result_small, "Результат Динамічного Програмування для малої суми"))
 
-greedy_time_example = form_execution_time(find_coins_greedy, small_amount)
-dp_time_example = form_execution_time(find_min_coins, small_amount)
+greedy_time_small = form_execution_time(find_coins_greedy, small_amount)
+dp_time_small = form_execution_time(find_min_coins, small_amount)
 
-print(f"Час виконання Жадібного Алгоритму для малої суми: {greedy_time_example:.4f} мс")
-print(f"Час виконання Динамічного Програмування для малої суми: {dp_time_example:.4f} мс")
+print(f"Час виконання Жадібного Алгоритму для малої суми: {greedy_time_small:.4f} мс")
+print(f"Час виконання Динамічного Програмування для малої суми: {dp_time_small:.4f} мс")
 
 print("-" * 70)
 
